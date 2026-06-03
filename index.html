@@ -4,34 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tobacco Station | Mokena, IL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
+  <!-- INTRO SCREEN -->
+  <div class="intro" id="intro">
+    <div class="intro-sign">
+      <div class="intro-logo">
+        <span>TOBACCO</span>
+        <span>STATION</span>
+      </div>
+      <p class="intro-sub">Mokena, IL</p>
+    </div>
+    <div class="intro-bar"><div class="intro-fill" id="introFill"></div></div>
+  </div>
+
   <!-- NAV -->
   <nav id="nav">
     <div class="nav-inner">
-      <!-- CSS LOGO — recreated from sign -->
-      <div class="logo-sign">
+      <div class="nav-logo">
         <span>TOBACCO</span>
         <span>STATION</span>
       </div>
       <ul class="nav-links">
-        <li><a href="#inside">Inside</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Visit</a></li>
+        <li><a href="#shop">The Shop</a></li>
+        <li><a href="#products">What We Carry</a></li>
+        <li><a href="#contact">Visit Us</a></li>
       </ul>
       <a href="tel:7089957077" class="nav-cta">
-        <span class="nav-dot"></span>
+        <span class="pulse-dot"></span>
         Open Now
       </a>
       <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
     <ul class="mobile-menu" id="mobileMenu">
-      <li><a href="#inside">Inside</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#contact">Visit</a></li>
+      <li><a href="#shop">The Shop</a></li>
+      <li><a href="#products">What We Carry</a></li>
+      <li><a href="#contact">Visit Us</a></li>
       <li><a href="tel:7089957077">(708) 995-7077</a></li>
     </ul>
   </nav>
@@ -39,91 +50,63 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-left">
-      <div class="hero-text">
-
-        <!-- BIG SIGN RECREATION IN HERO -->
-        <div class="hero-sign" id="heroSign">
-          <span>TOBACCO</span>
-          <span>STATION</span>
-        </div>
-
-        <p class="hero-desc">Your neighborhood stop — cigars, hookah, vapes, glass, edibles, snacks, drinks, lottery, ATM, Bitcoin, and more. Everything under one roof.</p>
-        <div class="hero-actions">
+      <div class="hero-content">
+        <span class="hero-tag">Mokena, IL · Open Daily</span>
+        <h1>Your neighborhood<br/><em>everything</em> store.</h1>
+        <p class="hero-p">Cigars, hookah, vapes, glass, snacks, drinks, lottery, ATM — all in one spot. The owner knows his stuff and the prices are hard to beat.</p>
+        <div class="hero-btns">
           <a href="tel:7089957077" class="btn-primary">Call Us</a>
-          <a href="#inside" class="btn-ghost">See Inside ↓</a>
+          <a href="#shop" class="btn-text">Take a look →</a>
         </div>
-        <div class="hero-hours">
-          <div class="hh"><span class="hh-label">Mon – Sat</span><span class="hh-val">10AM – 10PM</span></div>
-          <div class="hh-sep"></div>
-          <div class="hh"><span class="hh-label">Sunday</span><span class="hh-val">10AM – 9:30PM</span></div>
-          <div class="hh-sep"></div>
-          <div class="hh"><span class="hh-label">Address</span><span class="hh-val">19404 S La Grange, Mokena</span></div>
+        <div class="hours-row">
+          <div class="hr-item">
+            <span class="hr-label">Mon – Sat</span>
+            <span class="hr-val">10AM – 10PM</span>
+          </div>
+          <div class="hr-div"></div>
+          <div class="hr-item">
+            <span class="hr-label">Sunday</span>
+            <span class="hr-val">10AM – 9:30PM</span>
+          </div>
         </div>
       </div>
     </div>
     <div class="hero-right">
-      <div class="hero-img-stack">
-        <div class="hi hi-1">
-          <img src="./img-hookah-wall.jpg" alt="Hookah display wall" />
+      <div class="hero-imgs">
+        <div class="himg himg-top">
+          <img src="./img-hookah-wall.jpg" alt="Hookah wall" />
         </div>
-        <div class="hi hi-2">
-          <img src="./img-case.jpg" alt="Product display case" />
+        <div class="himg himg-bot">
+          <img src="./img-case.jpg" alt="Display case" />
+          <div class="himg-badge">19404 S La Grange Rd</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TICKER -->
-  <div class="ticker-wrap">
-    <div class="ticker">
-      <span>HOOKAH</span><span class="tdot">◆</span>
-      <span>CIGARS</span><span class="tdot">◆</span>
-      <span>VAPES</span><span class="tdot">◆</span>
-      <span>GLASS</span><span class="tdot">◆</span>
-      <span>EDIBLES</span><span class="tdot">◆</span>
-      <span>SNACKS</span><span class="tdot">◆</span>
-      <span>DRINKS</span><span class="tdot">◆</span>
-      <span>LOTTERY</span><span class="tdot">◆</span>
-      <span>ATM</span><span class="tdot">◆</span>
-      <span>BITCOIN ATM</span><span class="tdot">◆</span>
-      <span>TOBACCO</span><span class="tdot">◆</span>
-      <span>HOOKAH</span><span class="tdot">◆</span>
-      <span>CIGARS</span><span class="tdot">◆</span>
-      <span>VAPES</span><span class="tdot">◆</span>
-      <span>GLASS</span><span class="tdot">◆</span>
-      <span>EDIBLES</span><span class="tdot">◆</span>
-      <span>SNACKS</span><span class="tdot">◆</span>
-      <span>DRINKS</span><span class="tdot">◆</span>
-      <span>LOTTERY</span><span class="tdot">◆</span>
-      <span>ATM</span><span class="tdot">◆</span>
-      <span>BITCOIN ATM</span><span class="tdot">◆</span>
-      <span>TOBACCO</span><span class="tdot">◆</span>
-    </div>
-  </div>
-
-  <!-- INSIDE -->
-  <section class="inside" id="inside">
-    <div class="section-inner">
-      <div class="section-head">
-        <p class="eyebrow">Inside the Shop</p>
-        <h2>See It<br/><em>For Yourself</em></h2>
+  <!-- SHOP PHOTOS -->
+  <section class="shop" id="shop">
+    <div class="wrap">
+      <div class="shop-head">
+        <p class="label">Inside the Shop</p>
+        <h2>Come see what<br/>we're about.</h2>
       </div>
-      <div class="inside-grid">
-        <div class="ig-big reveal">
-          <img src="./img-hookah-display.jpg" alt="Hookah and shisha display" />
-          <div class="ig-label">
-            <span class="ig-cat">Hookah & Shisha</span>
-            <p>Massive selection of hookahs, shisha tobacco, bowls, charcoal, and accessories.</p>
+      <div class="shop-grid">
+        <div class="sg-main fade-in">
+          <img src="./img-hookah-display.jpg" alt="Hookah display" />
+          <div class="sg-overlay">
+            <span class="sg-label">Hookah & Shisha</span>
+            <p>Massive hookah selection, every shisha flavor, accessories — all in one place.</p>
           </div>
         </div>
-        <div class="ig-right">
-          <div class="ig-sm reveal">
-            <img src="./img-store.jpg" alt="Full store interior" />
-            <div class="ig-label-sm">Full Store · Cigars · Vapes · Glass · Convenience</div>
+        <div class="sg-side">
+          <div class="sg-sm fade-in">
+            <img src="./img-store.jpg" alt="Store interior" />
+            <span class="sg-tag">Cigars · Vapes · Convenience</span>
           </div>
-          <div class="ig-sm reveal">
-            <img src="./img-case.jpg" alt="Glass display case" />
-            <div class="ig-label-sm">Display Case · Delta 8 · Accessories · More</div>
+          <div class="sg-sm fade-in">
+            <img src="./img-case.jpg" alt="Display case" />
+            <span class="sg-tag">Delta 8 · Glass · Accessories</span>
           </div>
         </div>
       </div>
@@ -132,130 +115,148 @@
 
   <!-- PRODUCTS -->
   <section class="products" id="products">
-    <div class="section-inner">
-      <div class="section-head">
-        <p class="eyebrow">What We Carry</p>
-        <h2>More Than<br/>A Smoke Shop.</h2>
+    <div class="wrap">
+      <div class="prod-head">
+        <p class="label">What We Carry</p>
+        <h2>More than you'd expect.</h2>
       </div>
-      <div class="products-grid">
+      <div class="prod-list">
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">🪝</span>
-            <span class="prod-num">01</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">🪝</span>
+          <div class="pi-text">
+            <h3>Hookah</h3>
+            <p>Full wall of hookahs, every shisha flavor, bowls, hoses, charcoal. Best around.</p>
           </div>
-          <h3>Hookah</h3>
-          <p>Full wall of hookahs, every shisha flavor, bowls, hoses, and charcoal. Best selection around.</p>
         </div>
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">🍂</span>
-            <span class="prod-num">02</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">🍂</span>
+          <div class="pi-text">
+            <h3>Cigars</h3>
+            <p>Dedicated cigar room. Everyday smokes to top shelf — something for everyone.</p>
           </div>
-          <h3>Cigars</h3>
-          <p>Premium cigars in a dedicated cigar room. From everyday smokes to top shelf selections.</p>
         </div>
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">💨</span>
-            <span class="prod-num">03</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">💨</span>
+          <div class="pi-text">
+            <h3>Vapes & E-Cigs</h3>
+            <p>Devices, disposables, cartridges, coils. Ask the owner — he knows what works.</p>
           </div>
-          <h3>Vapes & E-Cigs</h3>
-          <p>Devices, disposables, cartridges, coils. Huge selection with an owner who knows his stuff.</p>
         </div>
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">🪟</span>
-            <span class="prod-num">04</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">🪟</span>
+          <div class="pi-text">
+            <h3>Glass & Pipes</h3>
+            <p>Full display case — hand pipes, rigs, Cookies brand, and more.</p>
           </div>
-          <h3>Glass & Pipes</h3>
-          <p>Full display case of hand pipes, rigs, and accessories. Cookies brand and more.</p>
         </div>
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">🍬</span>
-            <span class="prod-num">05</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">🍬</span>
+          <div class="pi-text">
+            <h3>Edibles & Delta 8</h3>
+            <p>XITE gummies, chocolates, and premium Delta 8 brands in stock.</p>
           </div>
-          <h3>Edibles & Delta 8</h3>
-          <p>Delta 8 gummies, chocolates, and more. XITE and other premium brands in stock.</p>
         </div>
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">🛒</span>
-            <span class="prod-num">06</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">🛒</span>
+          <div class="pi-text">
+            <h3>Snacks & Drinks</h3>
+            <p>Energy drinks, snacks, detox products and everyday convenience items.</p>
           </div>
-          <h3>Convenience Items</h3>
-          <p>Snacks, drinks, energy drinks, detox products and everyday essentials. More than just smoke.</p>
         </div>
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">🎰</span>
-            <span class="prod-num">07</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">🎰</span>
+          <div class="pi-text">
+            <h3>Lottery</h3>
+            <p>Illinois Lottery tickets. Stop in and try your luck.</p>
           </div>
-          <h3>Lottery</h3>
-          <p>Illinois Lottery tickets available in store. Stop in, grab a ticket, try your luck.</p>
         </div>
 
-        <div class="prod reveal">
-          <div class="prod-top">
-            <span class="prod-icon">₿</span>
-            <span class="prod-num">08</span>
+        <div class="prod-item fade-in">
+          <span class="pi-icon">₿</span>
+          <div class="pi-text">
+            <h3>ATM & Bitcoin ATM</h3>
+            <p>Cash and Bitcoin ATM on site. One more reason to stop in.</p>
           </div>
-          <h3>ATM & Bitcoin ATM</h3>
-          <p>Cash ATM and Bitcoin ATM on site. One more reason to stop in.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- REVIEW -->
-  <div class="review-block">
-    <div class="review-inner">
-      <div class="review-stars">★★★★★</div>
-      <blockquote>"I found this hidden gem and couldn't be more satisfied. The owner is extremely friendly and knowledgeable — unbeatable prices. He has never failed me."</blockquote>
-      <cite>— Verified Google Review</cite>
+  <!-- REVIEWS — AUTO ROTATING -->
+  <section class="reviews">
+    <div class="wrap reviews-wrap">
+      <p class="label">What People Say</p>
+      <div class="review-stage">
+        <div class="review-card active" data-index="0">
+          <div class="rev-stars">★★★★★</div>
+          <p>"Found this place months ago and couldn't be more satisfied. The owner is knowledgeable and the prices are unbeatable. If he recommends something — run with it."</p>
+          <cite>— Google Review</cite>
+        </div>
+        <div class="review-card" data-index="1">
+          <div class="rev-stars">★★★★★</div>
+          <p>"Amazing selection of hookah tobacco and accessories. Super nice owner. This place has everything. Highly recommend."</p>
+          <cite>— Google Review</cite>
+        </div>
+        <div class="review-card" data-index="2">
+          <div class="rev-stars">★★★★★</div>
+          <p>"Been coming here for a while. The owner always helps me find new products. Best prices around for vapes and glass — won't go anywhere else."</p>
+          <cite>— Google Review</cite>
+        </div>
+        <div class="review-card" data-index="3">
+          <div class="rev-stars">★★★★★</div>
+          <p>"One of the best smoke shops I've been to. Clean, well stocked, and the owner actually cares about his customers. Hidden gem for real."</p>
+          <cite>— Google Review</cite>
+        </div>
+      </div>
+      <div class="review-dots" id="reviewDots">
+        <span class="rdot active"></span>
+        <span class="rdot"></span>
+        <span class="rdot"></span>
+        <span class="rdot"></span>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <div class="section-inner contact-inner">
-      <div class="reveal">
-        <p class="eyebrow">Find Us</p>
-        <h2>Come In.</h2>
-        <div class="cdetail">
+    <div class="wrap contact-wrap">
+      <div class="contact-left fade-in">
+        <p class="label">Find Us</p>
+        <h2>Stop in anytime.</h2>
+        <div class="cd">
           <span class="cd-label">Address</span>
           <span>19404 S La Grange Rd, Mokena, IL 60448</span>
         </div>
-        <div class="cdetail">
+        <div class="cd">
           <span class="cd-label">Phone</span>
           <a href="tel:7089957077">(708) 995-7077</a>
         </div>
-        <div class="cdetail">
+        <div class="cd">
           <span class="cd-label">Hours</span>
-          <span>Mon – Sat &nbsp; 10:00 AM – 10:00 PM<br/>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM – 9:30 PM</span>
+          <span>Mon – Sat &nbsp; 10AM – 10PM<br/>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10AM – 9:30PM</span>
         </div>
-        <div class="cdetail">
+        <div class="cd">
           <span class="cd-label">Instagram</span>
           <a href="https://www.instagram.com/tobaccostationmokena/" target="_blank">@tobaccostationmokena</a>
         </div>
         <div class="contact-btns">
           <a href="tel:7089957077" class="btn-primary">Call Now</a>
-          <a href="https://maps.google.com/?q=19404+S+La+Grange+Rd+Mokena+IL" target="_blank" class="btn-ghost">Get Directions</a>
+          <a href="https://maps.google.com/?q=19404+S+La+Grange+Rd+Mokena+IL" target="_blank" class="btn-outline">Get Directions</a>
         </div>
       </div>
-      <div class="map-wrap reveal">
+      <div class="map-wrap fade-in">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.0!2d-87.8700!3d41.5500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s19404+S+La+Grange+Rd%2C+Mokena%2C+IL+60448!5e0!3m2!1sen!2sus!4v1"
           width="100%" height="420"
-          style="border:0;border-radius:4px;"
+          style="border:0;"
           allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Tobacco Station Mokena">
@@ -267,12 +268,12 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-sign">
+      <div class="footer-logo">
         <span>TOBACCO</span>
         <span>STATION</span>
       </div>
-      <p>19404 S La Grange Rd, Mokena, IL 60448 · (708) 995-7077</p>
-      <p class="fcopy">© 2025 Tobacco Station · All Rights Reserved</p>
+      <p>19404 S La Grange Rd · Mokena, IL · (708) 995-7077</p>
+      <p class="fcopy">© 2025 Tobacco Station</p>
     </div>
   </footer>
 
